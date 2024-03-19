@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_compass_app/splash.dart';
 
 void main() => runApp(myCompassApp());
 
@@ -8,6 +9,7 @@ class myCompassApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/',
       title: "Compass",
       theme: ThemeData(
         primarySwatch: Colors.blue
@@ -30,6 +32,15 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Home Page"),
+      ),
+      body: content(),
+    );
+  }
+
+  Widget content() {
+    return Container();
   }
 }
