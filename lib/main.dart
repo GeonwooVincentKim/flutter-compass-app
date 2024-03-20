@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_compass_app/new_splash.dart';
 import 'package:flutter_compass_app/splash.dart';
 
 void main() => runApp(myCompassApp());
@@ -15,7 +16,8 @@ class myCompassApp extends StatelessWidget {
         primarySwatch: Colors.blue
       ),
       routes: {
-        '/': (context) => Splash(),
+        '/': (context) => NewSplash(),
+        // '/': (context) => Splash(),
         '/home': (context) => Home(),
       },
     );
