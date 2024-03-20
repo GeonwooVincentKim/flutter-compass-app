@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_compass/flutter_compass.dart';
 import 'package:flutter_compass_app/new_splash.dart';
 import 'package:flutter_compass_app/splash.dart';
 
@@ -32,6 +33,18 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  double? heading;
+
+  @override
+  void initState() {
+    super.initState();
+    FlutterCompass.events!.listen((event) {
+      setState(() {
+        heading = event.heading;
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

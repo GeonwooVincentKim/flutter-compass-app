@@ -31,7 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
   lottie: ^2.6.0
-  animated_check: 
+  animated_check: ^1.0.5 
+  flutter_compass: ^0.8.0
 
 
   # The following adds the Cupertino Icons font to your application.
