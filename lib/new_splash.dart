@@ -27,7 +27,7 @@ class _NewSplashState extends State<NewSplash> with TickerProviderStateMixin {
 
     if (!isAnimationDone) {
       timer = Timer.periodic(
-        Duration(seconds: 3),
+        const Duration(seconds: 3),
         (_) => checkAnimationDone()
       );
     }
@@ -63,7 +63,7 @@ class _NewSplashState extends State<NewSplash> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: Text("Splash test"),
+      title: const Text("Splash test"),
       centerTitle: true,
     ),
     body: Center(
