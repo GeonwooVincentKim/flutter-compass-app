@@ -80,11 +80,11 @@ class _HomeState extends State<Home> {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              Image.asset("assets/images/quadrant.jpg"),
+              Image.asset("assets/images/pngegg.png"),
               Transform.rotate(
                 angle: ((heading ?? 0) * (pi / 180) * -1),
                 child: Image.asset(
-                  "assets/images/pngegg.png",
+                  "assets/images/compass.png",
                   scale: 1.1
                 ),
               ),
