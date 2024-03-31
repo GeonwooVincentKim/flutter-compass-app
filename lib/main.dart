@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
               Transform.rotate(
                 angle: ((heading ?? 0) * (pi / 180) * -1),
                 child: Image.asset(
-                  "assets/images/compass.png",
+                  "assets/images/pngegg.png",
                   scale: 1.1
                 ),
               ),
